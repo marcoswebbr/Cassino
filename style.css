@@ -1,0 +1,72 @@
+body {
+  background: #0e0e0e;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+header {
+  padding: 15px;
+  background: #b30000;
+}
+
+header h1 {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  gap: 5px;
+  overflow-x: auto;
+}
+
+nav button {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+}
+
+input {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+main {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 10px;
+}
+
+.card {
+  background: linear-gradient(180deg, #2a0000, #000);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h3 {
+  font-size: 14px;
+}
+
+.info {
+  font-size: 12px;
+}
+
+.jogar {
+  background: #00c853;
+  border: none;
+  width: 100%;
+  padding: 8px;
+  border-radius: 10px;
+  margin-top: 5px;
+}

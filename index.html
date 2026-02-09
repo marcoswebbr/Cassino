@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Rei dos Slots</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>👑 Rei dos Slots</h1>
+  <nav>
+    <button onclick="filtrar('Todos')">Todos</button>
+    <button onclick="filtrar('PG')">PG Games</button>
+    <button onclick="filtrar('PP')">PP Games</button>
+    <button onclick="filtrar('WG')">WG Games</button>
+    <button onclick="filtrar('Favoritos')">❤️ Favoritos</button>
+  </nav>
+  <input type="text" placeholder="Pesquise o jogo..." onkeyup="buscar(this.value)">
+</header>
+
+<main id="lista-jogos"></main>
+
+<script src="js/app.js"></script>
+</body>
+</html>
