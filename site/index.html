@@ -1,27 +1,51 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Rei dos Slots</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataformas Indicadas</title>
+    <!-- Inclua seu arquivo CSS aqui -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <!-- Logo e navegação superior (Home, Instagram, Telegram) -->
+        <h1>REI DOS SLOTS</h1>
+        <p>*PLATAFORMAS INDICADAS</p>
+    </header>
 
-<header>
-  <h1>👑 Rei dos Slots</h1>
-  <nav>
-    <button onclick="filtrar('Todos')">Todos</button>
-    <button onclick="filtrar('PG')">PG Games</button>
-    <button onclick="filtrar('PP')">PP Games</button>
-    <button onclick="filtrar('WG')">WG Games</button>
-    <button onclick="filtrar('Favoritos')">❤️ Favoritos</button>
-  </nav>
-  <input type="text" placeholder="Pesquise o jogo..." onkeyup="buscar(this.value)">
-</header>
+    <main class="game-grid">
+        <!-- Exemplo de um Jogo/Card -->
+        <a href="URL_DO_SEU_LINK_AQUI" class="game-card">
+            <div class="card-content">
+                <img src="URL_DA_IMAGEM_AQUI" alt="Nome do Jogo">
+                <span class="badge-novo">NOVO</span>
+            </div>
+            <div class="card-footer">
+                <h3>Nome do Jogo</h3>
+                <p>Detalhes (ex: 057 win)</p>
+            </div>
+        </a>
 
-<main id="lista-jogos"></main>
+        <!-- Copie e cole o bloco acima (<a href="..." class="game-card">...</a>) para cada jogo no seu JSON -->
 
-<script src="js/app.js"></script>
+        <a href="URL_DO_SEU_LINK_AQUI_2" class="game-card">
+            <div class="card-content">
+                <img src="URL_DA_IMAGEM_AQUI_2" alt="Nome do Jogo 2">
+                <span class="badge-novo">NOVO</span>
+            </div>
+            <div class="card-footer">
+                <h3>Nome do Jogo 2</h3>
+                <p>Detalhes (ex: Fixe777)</p>
+            </div>
+        </a>
+
+        <!-- Adicione mais cards conforme necessário... -->
+
+    </main>
+
+    <footer>
+        <p>Instagram Oficial!</p>
+    </footer>
 </body>
 </html>
