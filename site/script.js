@@ -1,21 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
     const gameContainer = document.getElementById('game-container');
 
-    // Função para criar o elemento HTML do card (a mesma de antes)
+    // Função para criar o elemento HTML do card
     function createGameCard(game) {
         const cardLink = document.createElement('a');
-        cardLink.href = game.link;
+        cardLink.href = game.link; // Usa o campo 'link'
         cardLink.classList.add('game-card');
         cardLink.setAttribute('target', '_blank');
 
         cardLink.innerHTML = `
             <div class="card-content">
-                <img src="${game.image}" alt="${game.name}">
-                ${game.isNew ? '<span class="badge-novo">NOVO</span>' : ''}
+                <img src="${game.imagem}" alt="${game.nome}"> <!-- Usa o campo 'imagem' -->
+                <!-- Usei o campo 'distribuicao' como uma condição simples para o selo NOVO, se quiser -->
+                ${game.distribuicao > 70 ? '<span class="badge-novo">NOVO</span>' : ''}
             </div>
             <div class="card-footer">
-                <h3>${game.name}</h3>
-                <p>${game.details}</p>
+                <h3>${game.nome}</h3> <!-- Usa o campo 'nome' -->
+                <p>${game.provedor}</p> <!-- Usa o campo 'provedor' -->
             </div>
         `;
         
@@ -39,6 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(error => {
             console.error('Erro ao carregar jogos:', error);
-            gameContainer.innerHTML = '<p>Ocorreu um erro ao carregar os jogos. Tente novamente mais tarde.</p>';
+            gameContainer.innerHTML = '<p>Ocorreu um erro ao carregar os jogos. Verifique se o arquivo jogos.json existe e está acessível.</p>';
         });
 });
