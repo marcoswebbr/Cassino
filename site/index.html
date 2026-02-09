@@ -3,45 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plataformas Indicadas</title>
-    <!-- Inclua seu arquivo CSS aqui -->
+    <title>Rei dos Slots | Plataformas Indicadas</title>
     <link rel="stylesheet" href="style.css">
+    <!-- O script.js deve ser carregado no final do body para garantir que o HTML já esteja pronto -->
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <!-- Logo e navegação superior (Home, Instagram, Telegram) -->
-        <h1>REI DOS SLOTS</h1>
-        <p>*PLATAFORMAS INDICADAS</p>
+        <div class="logo">REI DOS SLOTS</div>
+        <nav>
+            <a href="#" class="nav-btn">Home</a>
+            <a href="#" class="nav-btn">Instagram</a>
+            <a href="#" class="nav-btn">Telegram</a>
+        </nav>
+        <p class="subtitle">*PLATAFORMAS INDICADAS</p>
     </header>
 
-    <main class="game-grid">
-        <!-- Exemplo de um Jogo/Card -->
-        <a href="URL_DO_SEU_LINK_AQUI" class="game-card">
-            <div class="card-content">
-                <img src="URL_DA_IMAGEM_AQUI" alt="Nome do Jogo">
-                <span class="badge-novo">NOVO</span>
-            </div>
-            <div class="card-footer">
-                <h3>Nome do Jogo</h3>
-                <p>Detalhes (ex: 057 win)</p>
-            </div>
-        </a>
-
-        <!-- Copie e cole o bloco acima (<a href="..." class="game-card">...</a>) para cada jogo no seu JSON -->
-
-        <a href="URL_DO_SEU_LINK_AQUI_2" class="game-card">
-            <div class="card-content">
-                <img src="URL_DA_IMAGEM_AQUI_2" alt="Nome do Jogo 2">
-                <span class="badge-novo">NOVO</span>
-            </div>
-            <div class="card-footer">
-                <h3>Nome do Jogo 2</h3>
-                <p>Detalhes (ex: Fixe777)</p>
-            </div>
-        </a>
-
-        <!-- Adicione mais cards conforme necessário... -->
-
+    <main id="game-container" class="game-grid">
+        <!-- Os cards de jogos serão inseridos aqui pelo JavaScript -->
     </main>
 
     <footer>
